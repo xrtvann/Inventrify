@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  },
+  "name": "inventrify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./public/css/style.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./public/css/style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrtvann/Inventrify.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xrtvann/Inventrify/issues"
+  },
+  "homepage": "https://github.com/xrtvann/Inventrify#readme",
+  "description": ""
+}
