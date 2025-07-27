@@ -15,15 +15,22 @@
     <div class="flex min-h-screen">
         <!-- Sidebar -->
         <aside id="sidebar"
-            class="w-70 bg-white text-gray-600 shadow-sm transition-transform duration-300 ease-in-out transform lg:translate-x-0 -translate-x-full fixed lg:relative z-30 h-full lg:h-auto">
+            class="w-70 bg-white text-gray-600 shadow-sm transition-all duration-300 ease-in-out fixed lg:relative z-30 h-full lg:h-auto">
             <!-- Header Sidebar -->
             <header class="p-5">
-                <div class="flex items-center space-x-2">
-                    <div class="w-10 h-10 flex items-center justify-center">
-                        <img src="images/Inventrify-48x48.png" alt="">
+                <div class="flex items-center justify-between h-[48px]">
+                    <div class="brand" id="sidebarBrand">
+                        <div class="flex items-center justify-center">
+                            <img src="images/Inventrify-48x48.png" alt="Inventrify Logo">
+                            <h1 class="text-xl font-bold text-primary ms-2.5">Inventrify</h1>
+                        </div>
                     </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-primary">Inventrify</h1>
+
+
+                    <div class="flex items-center ms-2.5">
+                        <button id="sidebarToggle" class="text-gray-600 hover:text-gray-900">
+                            <i class="fas fa-angle-left text-lg cursor-pointer transition duration-300" id="toggleIcon"></i>
+                        </button>
                     </div>
                 </div>
             </header>
@@ -32,44 +39,45 @@
             <nav class="mt-6 mx-2">
                 <ul class="space-y-5 px-4">
                     <li>
-                        <a href="#" class="flex items-center space-x-3 px-3 py-2.5 rounded-md bg-primary text-white">
-                            <i class="fas fa-house w-5"></i>
-                            <span class="text-md">Dashboard</span>
+                        <a href="#"
+                            class="flex items-center space-x-3 px-3 py-2.5 rounded-md bg-primary text-white sidebar-link">
+                            <i class="fas fa-house"></i>
+                            <span class="text-md sidebar-text">Dashboard</span>
                         </a>
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors">
-                            <i class="fas fa-box-open w-5"></i>
-                            <span>Products</span>
+                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                            <i class="fas fa-box-open"></i>
+                            <span class="sidebar-text">Products</span>
                         </a>
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors">
-                            <i class="fas fa-list w-5"></i>
-                            <span>Categories</span>
+                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                            <i class="fas fa-list"></i>
+                            <span class="sidebar-text">Categories</span>
                         </a>
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors">
-                            <i class="fas fa-dolly w-5"></i>
-                            <span>Orders</span>
+                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                            <i class="fas fa-dolly"></i>
+                            <span class="sidebar-text">Orders</span>
                         </a>
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors">
-                            <i class="fa-solid fa-truck-field w-5"></i>
-                            <span>Suppliers</span>
+                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                            <i class="fa-solid fa-truck-field"></i>
+                            <span class="sidebar-text">Suppliers</span>
                         </a>
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors">
-                            <i class="fa-solid fa-file-lines w-5"></i>
-                            <span>Reports</span>
+                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span class="sidebar-text">Reports</span>
                         </a>
                     </li>
                 </ul>
@@ -80,20 +88,16 @@
 
         <!-- Overlay untuk mobile -->
         <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-20 lg:hidden hidden"></div>
-        <div class="flex-1 flex flex-col min-h-screen">
+        <div id="mainContent" class="flex-1 flex flex-col min-h-screen transition-all duration-300">
             <!-- Header Navbar -->
             <header class="bg-white shadow-sm sticky top-0 z-10">
-                <div class="flex items-center justify-between px-4 py-3 lg:px-6 lg:py-4">
+                <div class="flex items-center justify-end px-4 py-3 lg:px-6 lg:py-4">
                     <!-- Left side - Mobile menu button & Page title -->
-                    <div class="flex items-center space-x-4">
-                        <button id="sidebarToggle" class="text-gray-600 hover:text-gray-900 p-1">
-                            <i class="fas fa-bars text-xl"></i>
-                        </button>
-                    </div>
+
 
                     <!-- Right side - Search, notifications, profile -->
                     <div class="flex items-center space-x-3 lg:space-x-4">
-                    
+
                         <!-- Notifications -->
                         <button class="relative text-gray-600 hover:text-gray-900 p-2">
                             <i class="fas fa-bell text-lg"></i>
@@ -223,6 +227,7 @@
         </div>
     </div>
 
+    <script src="js/app.js"></script>
 </body>
 
 </html>
