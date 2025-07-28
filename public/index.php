@@ -12,12 +12,12 @@
 </head>
 
 <body class="font-poppins">
-    <div class="flex min-h-screen">
+    <div class="flex h-screen overflow-hidden">
         <!-- Sidebar -->
         <aside id="sidebar"
-            class="w-70 bg-white text-gray-600 shadow-sm transition-all duration-300 ease-in-out fixed lg:relative z-30 h-full lg:h-auto">
-            <!-- Header Sidebar -->
-            <header class="p-5">
+            class="w-70 bg-white text-gray-600 shadow-sm transition-all duration-300 ease-in-out fixed top-0 left-0 h-screen z-30 lg:relative lg:h-full flex flex-col shrink-0">
+            <!-- Header Sidebar - Fixed -->
+            <header class="p-5 flex-shrink-0">
                 <div class="flex items-center justify-between h-[48px]">
                     <div class="brand" id="sidebarBrand">
                         <div class="flex items-center justify-center">
@@ -26,71 +26,73 @@
                         </div>
                     </div>
 
-
                     <div class="flex items-center ms-2.5">
                         <button id="sidebarToggle" class="text-gray-600 hover:text-gray-900">
-                            <i class="fas fa-angle-left text-lg cursor-pointer transition duration-300" id="toggleIcon"></i>
+                            <i class="fas fa-angle-left text-lg cursor-pointer transition duration-300"
+                                id="toggleIcon"></i>
                         </button>
                     </div>
                 </div>
             </header>
 
-            <!-- Navigation Menu -->
-            <nav class="mt-6 mx-2">
-                <ul class="space-y-5 px-4">
-                    <li>
-                        <a href="#"
-                            class="flex items-center space-x-3 px-3 py-2.5 rounded-md bg-primary text-white sidebar-link">
-                            <i class="fas fa-house"></i>
-                            <span class="text-md sidebar-text">Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
-                            <i class="fas fa-box-open"></i>
-                            <span class="sidebar-text">Products</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
-                            <i class="fas fa-list"></i>
-                            <span class="sidebar-text">Categories</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
-                            <i class="fas fa-dolly"></i>
-                            <span class="sidebar-text">Orders</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
-                            <i class="fa-solid fa-truck-field"></i>
-                            <span class="sidebar-text">Suppliers</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
-                            <i class="fa-solid fa-file-lines"></i>
-                            <span class="sidebar-text">Reports</span>
-                        </a>
-                    </li>
-                </ul>
-
-
+            <!-- Navigation Menu - Scrollable -->
+            <nav class="flex-1 overflow-y-auto">
+                <div class="mt-6 mx-2">
+                    <ul class="space-y-5 px-4 pb-6">
+                        <li>
+                            <a href="#"
+                                class="flex items-center space-x-3 px-3 py-2.5 rounded-md bg-primary text-white sidebar-link">
+                                <i class="fas fa-house"></i>
+                                <span class="text-md sidebar-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                                <i class="fas fa-box-open"></i>
+                                <span class="sidebar-text">Products</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                                <i class="fas fa-list"></i>
+                                <span class="sidebar-text">Categories</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                                <i class="fas fa-dolly"></i>
+                                <span class="sidebar-text">Orders</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                                <i class="fa-solid fa-truck-field"></i>
+                                <span class="sidebar-text">Suppliers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                                <span class="sidebar-text">Reports</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </aside>
 
         <!-- Overlay untuk mobile -->
         <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-20 lg:hidden hidden"></div>
-        <div id="mainContent" class="flex-1 flex flex-col min-h-screen transition-all duration-300">
-            <!-- Header Navbar -->
-            <header class="bg-white shadow-sm sticky top-0 z-10">
+
+        <!-- Main Content Area -->
+        <div id="mainContent" class="flex-1 flex flex-col h-screen transition-all duration-300 lg:ml-0">
+            <!-- Header Navbar - Sticky -->
+            <header class="bg-white shadow-sm flex-shrink-0 z-10">
                 <div class="flex items-center justify-end px-4 py-3 lg:px-6 lg:py-4">
                     <!-- Left side - Mobile menu button & Page title -->
 
@@ -143,8 +145,8 @@
                 </div>
             </header>
 
-            <!-- Main Content -->
-            <main class="flex-1 p-4 lg:p-6">
+            <!-- Main Content - Scrollable -->
+            <main class="flex-1 p-4 lg:p-6 bg-gray-100 overflow-y-auto">
                 <div class="max-w-7xl mx-auto">
                     <!-- Stats Cards -->
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -221,6 +223,41 @@
                     <div class="bg-white rounded-lg shadow-md p-6">
                         <h2 class="text-lg font-semibold text-gray-800 mb-4">Recent Activity</h2>
                         <p class="text-gray-600">Your dashboard content goes here...</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ea ipsa veritatis rerum harum
+                            doloremque laudantium. Quasi eaque aspernatur aliquid, consequuntur fugiat fuga libero
+                            exercitationem obcaecati, blanditiis eos molestiae totam unde! Ratione, excepturi rerum
+                            debitis animi reiciendis aut mollitia earum accusamus modi magnam recusandae quis quod
+                            aspernatur provident a sapiente pariatur id vel inventore maxime nihil nisi iure placeat
+                            accusantium. Aliquid quisquam iste veritatis odit excepturi mollitia vitae dignissimos nihil
+                            blanditiis libero iure nostrum consequuntur repudiandae rerum in eveniet accusamus tenetur
+                            nemo dolorem, odio asperiores cum? Quia ratione voluptas nemo exercitationem asperiores
+                            nulla ad ipsa molestiae nobis cupiditate! Pariatur consequatur saepe quam, placeat libero
+                            eos quo aliquid rerum optio cumque. Nesciunt possimus, necessitatibus consectetur ducimus
+                            cum laboriosam in nihil, eius natus vero harum libero ipsa, cumque beatae mollitia impedit!
+                            Dolore labore odit perferendis saepe assumenda consequatur provident impedit quae,
+                            exercitationem, earum suscipit aliquid doloremque nulla veritatis repellat laborum numquam,
+                            nobis sint et sed! Est perspiciatis excepturi molestiae consequatur placeat nobis unde
+                            incidunt earum recusandae, dolores animi magni repellendus vero, id consequuntur temporibus,
+                            eos eligendi? Beatae delectus dolores optio? Atque hic, quas tempora expedita laboriosam
+                            tenetur aut, totam impedit dolorem recusandae officia? Consequatur atque sequi numquam
+                            veritatis ab illum beatae quisquam nulla dignissimos aliquid natus tenetur voluptatibus
+                            suscipit quam nobis minus fugit ad dolor, debitis ex. Ea, in quisquam. Repudiandae eligendi
+                            iusto eveniet nam, id iste dolorem! Veniam doloribus asperiores quo aperiam reprehenderit
+                            magni, provident corrupti sint, nesciunt eaque error accusamus assumenda molestiae mollitia
+                            dolor dolore aliquid eveniet esse neque sit, voluptatum alias eos autem? Natus adipisci
+                            sequi exercitationem, eveniet ullam itaque alias mollitia optio nihil quos assumenda odit
+                            quibusdam, sit veritatis quaerat iste vero corporis repudiandae dicta? Enim minus porro
+                            excepturi perferendis nam atque, quasi cumque commodi consequuntur sed, quisquam
+                            perspiciatis neque amet architecto beatae? Quibusdam, eaque quod dignissimos quasi pariatur
+                            tempore deleniti ut deserunt eveniet exercitationem error. Quis reiciendis nihil eos
+                            laboriosam nobis in odio nisi minus blanditiis cum corrupti pariatur eveniet nostrum illum
+                            mollitia dolorum labore assumenda, quam deleniti esse. Ipsa recusandae necessitatibus
+                            voluptate at tempore dolorum exercitationem nesciunt repudiandae, consequatur odit, dolorem
+                            quasi? Quos molestias maiores non ipsam perspiciatis dicta at temporibus nulla enim, sequi,
+                            alias beatae consequuntur quasi hic eveniet sunt a minus. Voluptatum, repudiandae
+                            recusandae. Expedita doloremque ea necessitatibus omnis possimus delectus laborum, ipsam
+                            quasi ex accusamus perspiciatis harum animi molestiae. Quod vero culpa harum, labore
+                            assumenda pariatur dolor sequi a nisi consectetur cum neque.</p>
                     </div>
                 </div>
             </main>
