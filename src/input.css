@@ -5,3 +5,11 @@
   --font-poppins: "Poppins", sans-serif;
   --color-primary: #2464ad;
 }
+
+@utility hover-menu {
+  @apply hover:bg-primary hover:text-white transition-colors;
+}
+
+.sidebar-active {
+  @apply bg-primary text-white;
+}

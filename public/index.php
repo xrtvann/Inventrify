@@ -1,12 +1,12 @@
 <?php
-$page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
+$page = isset($_GET['page']) ? $_GET['page'] : '/';
 $pageTitles = [
-    'dashboard' => 'Dashboard',
-    'products' => 'Products',
-    'categories' => 'Categories',
-    'orders' => 'Orders',
-    'suppliers' => 'Suppliers',
-    'reports' => 'Reports',
+    '/' => 'Dashboard | Inventrify',
+    'products' => 'Products | Inventrify',
+    'categories' => 'Categories | Inventrify',
+    'orders' => 'Orders | Inventrify',
+    'suppliers' => 'Suppliers | Inventrify',
+    'reports' => 'Reports | Inventrify',
 ];
 $title = isset($pageTitles[$page]) ? $pageTitles[$page] : 'Todolist App';
 ?>
@@ -49,47 +49,48 @@ $title = isset($pageTitles[$page]) ? $pageTitles[$page] : 'Todolist App';
             </header>
 
             <!-- Navigation Menu - Scrollable -->
+            <?php $currentPage = isset($_GET['page']) ? $_GET['page'] : '/'; ?>
             <nav class="flex-1 overflow-y-auto">
                 <div class="mt-6 mx-2">
                     <ul class="space-y-5 px-4 pb-6">
                         <li>
-                            <a href="#"
-                                class="flex items-center space-x-3 px-3 py-2.5 rounded-md bg-primary text-white sidebar-link">
+                            <a href="/"
+                                class="flex items-center space-x-3 px-3 py-2.5 rounded-md sidebar-link <?= $currentPage === '/' ? 'sidebar-active' : 'hover-menu' ?>">
                                 <i class="fas fa-house"></i>
                                 <span class="text-md sidebar-text">Dashboard</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                            <a href="?page=products"
+                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md sidebar-link <?= $currentPage === 'products' ? 'sidebar-active' : 'hover-menu' ?>">
                                 <i class="fas fa-box-open"></i>
                                 <span class="sidebar-text">Products</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                            <a href="?page=categories"
+                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md  sidebar-link <?= $currentPage === 'categories' ? 'sidebar-active' : 'hover-menu' ?>">
                                 <i class="fas fa-list"></i>
                                 <span class="sidebar-text">Categories</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                            <a href="?page=orders"
+                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md sidebar-link <?= $currentPage === 'orders' ? 'sidebar-active' : 'hover-menu' ?>">
                                 <i class="fas fa-dolly"></i>
                                 <span class="sidebar-text">Orders</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                            <a href="?page=suppliers"
+                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md sidebar-link <?= $currentPage === 'suppliers' ? 'sidebar-active' : 'hover-menu' ?>">
                                 <i class="fa-solid fa-truck-field"></i>
                                 <span class="sidebar-text">Suppliers</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md hover:bg-primary hover:text-white transition-colors sidebar-link">
+                            <a href="?page=reports"
+                                class="flex items-center space-x-3 px-3 py-2.5  rounded-md sidebar-link <?= $currentPage === 'reports' ? 'sidebar-active' : 'hover-menu' ?>">
                                 <i class="fa-solid fa-file-lines"></i>
                                 <span class="sidebar-text">Reports</span>
                             </a>
