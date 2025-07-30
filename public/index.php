@@ -160,7 +160,7 @@ $title = isset($pageTitles[$page]) ? $pageTitles[$page] : 'Todolist App';
             </header>
 
             <!-- Main Content - Scrollable -->
-            <main class="flex-1 p-4 lg:p-6 bg-gray-50 overflow-y-auto">
+            <main class="flex-1 p-4 lg:p-6 bg-gray-100 overflow-y-auto">
                 <div class="max-w-7xl mx-auto">
                     <?php
                     $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
