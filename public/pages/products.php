@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <div class="bg-white border-r border-slate-100 p-4">
+        <div class="bg-white p-4">
             <div class="flex items-center justify-between">
                 <div>
                     <p class="text-sm font-medium text-gray-600">Almost Expired</p>
