@@ -1,17 +1,88 @@
-<div class="container bg-white px-5 py-4 rounded-sm shadow-md">
+<div class="container  bg-white px-5 py-5 rounded-sm shadow-md mb-8">
+    <!-- Product Overview Cards -->
+    <div class="grid grid-cols-4 gap-4">
+        <div class="bg-white border-r border-slate-100 p-4 ">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Total Products</p>
+                    <p class="text-2xl font-bold text-gray-900">47</p>
+                    <p class="text-xs text-green-600 mt-1">
+                        <i class="fas fa-arrow-up mr-1"></i>
+                        +3 this month
+                    </p>
+                </div>
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-box text-blue-600 text-xl"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border-r border-slate-100 p-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Top Selling</p>
+                    <p class="text-2xl font-bold text-gray-900">12</p>
+                    <p class="text-xs text-green-600 mt-1">
+                        <i class="fas fa-arrow-up mr-1"></i>
+                        +2 this week
+                    </p>
+                </div>
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-chart-line text-green-600 text-xl"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border-r border-slate-100 p-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Low Stock</p>
+                    <p class="text-2xl font-bold text-orange-600">5</p>
+                    <p class="text-xs text-orange-600 mt-1">
+                        <i class="fas fa-exclamation-triangle mr-1"></i>
+                        Needs restock
+                    </p>
+                </div>
+                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-exclamation-triangle text-orange-600 text-xl"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border-r border-slate-100 p-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Almost Expired</p>
+                    <p class="text-2xl font-bold text-red-600">3</p>
+                    <p class="text-xs text-red-600 mt-1">
+                        <i class="fas fa-clock mr-1"></i>
+                        Within 30 days
+                    </p>
+                </div>
+                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-clock text-red-600 text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Table  -->
+<div class="container bg-white px-5 py-5 rounded-sm shadow-md">
     <div class="flex justify-between mb-8">
         <div class="search-box">
             <form action="" method="post" class="relative">
                 <i class="fa fa-search text-sm absolute top-3 left-3 text-slate-500"></i>
                 <input type="text"
-                    class="search-input focus:outline-none border border-slate-300 focus:border-slate-500 bg-slate-100 px-6 py-1.5 ps-10 rounded-sm"
+                    class="search-input focus:outline-none border border-slate-300 focus:border-slate-500 bg-slate-0 px-6 py-1.5 ps-10 rounded-sm"
                     placeholder="Search products..." />
             </form>
         </div>
         <div class="right-action-buttons flex items-center gap-3">
             <div class="add-product">
                 <button
-                    class="bg-blue-600 text-white px-4 py-1.5 rounded-sm hover:bg-blue-700 cursor-pointer transition duration-200">
+                    class="bg-green-600 text-white px-4 py-1.5 rounded-sm hover:bg-green-700 cursor-pointer transition duration-200">
                     Add Product
                 </button>
             </div>
@@ -24,6 +95,7 @@
             </div>
         </div>
     </div>
+
     <div class="table-products w-full">
         <div class="overflow-x-auto rounded-sm border border-slate-200">
             <table class="w-full text-left bg-white">
