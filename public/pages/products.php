@@ -1,5 +1,5 @@
 <div class="container bg-white px-5 py-4 rounded-sm shadow-md">
-    <div class="flex justify-between">
+    <div class="flex justify-between mb-8">
         <div class="search-box">
             <form action="" method="post" class="relative">
                 <i class="fa fa-search text-sm absolute top-3 left-3 text-slate-500"></i>
@@ -21,5 +21,30 @@
                 </button>
             </div>
         </div>
+    </div>
+    <div class="table-products w-full">
+        <table class="table-fixed text-left w-full rounded-sm overflow-hidden">
+            <thead class="w-full bg-slate-300 text-gray-700 border-b border-slate-300">
+                <tr >
+                    <th class="text-sm font-medium py-2.5 ps-4">Name</th>
+                    <th class="text-sm font-medium py-2.5">Buying Price</th>
+                    <th class="text-sm font-medium py-2.5">Quantity</th>
+                    <th class="text-sm font-medium py-2.5">Threshold Value</th>
+                    <th class="text-sm font-medium py-2.5">Expired Date</th>
+                    <th class="text-sm font-medium py-2.5">Availability</th>
+                    <th class="text-sm font-medium py-2.5">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-2.5">lorem10</td>
+                    <td class="py-2.5">lorem10</td>
+                    <td class="py-2.5">lorem10</td>
+                    <td class="py-2.5">lorem10</td>
+                    <td class="py-2.5">lorem10</td>
+                    <td class="py-2.5">lorem10</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
