@@ -8,14 +8,14 @@
             <div class="flex items-center justify-between">
                 <div>
                     <p class="text-sm font-medium text-gray-600">Total Orders</p>
-                    <p class="text-2xl font-bold text-gray-900">47</p>
+                    <p class="text-2xl font-bold text-gray-900">127</p>
                     <p class="text-xs text-green-600 mt-1">
                         <i class="fas fa-arrow-up mr-1"></i>
-                        +3 this month
+                        +8 this month
                     </p>
                 </div>
                 <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <i class="fas fa-box text-blue-600 text-xl"></i>
+                    <i class="fas fa-clipboard-list text-blue-600 text-xl"></i>
                 </div>
             </div>
         </div>
@@ -23,15 +23,15 @@
         <div class="bg-white border-r border-slate-100 p-4">
             <div class="flex items-center justify-between">
                 <div>
-                    <p class="text-sm font-medium text-gray-600">Top Received</p>
-                    <p class="text-2xl font-bold text-gray-900">12</p>
+                    <p class="text-sm font-medium text-gray-600">Received</p>
+                    <p class="text-2xl font-bold text-gray-900">89</p>
                     <p class="text-xs text-green-600 mt-1">
-                        <i class="fas fa-arrow-up mr-1"></i>
-                        +2 this week
+                        <i class="fas fa-check mr-1"></i>
+                        Successfully delivered
                     </p>
                 </div>
                 <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <i class="fas fa-chart-line text-green-600 text-xl"></i>
+                    <i class="fas fa-truck-loading text-green-600 text-xl"></i>
                 </div>
             </div>
         </div>
@@ -39,15 +39,15 @@
         <div class="bg-white border-r border-slate-100 p-4">
             <div class="flex items-center justify-between">
                 <div>
-                    <p class="text-sm font-medium text-gray-600">Total Returned</p>
-                    <p class="text-2xl font-bold text-orange-600">5</p>
+                    <p class="text-sm font-medium text-gray-600">In Transit</p>
+                    <p class="text-2xl font-bold text-orange-600">24</p>
                     <p class="text-xs text-orange-600 mt-1">
-                        <i class="fas fa-exclamation-triangle mr-1"></i>
-                        Needs restock
+                        <i class="fas fa-shipping-fast mr-1"></i>
+                        On the way
                     </p>
                 </div>
                 <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                    <i class="fas fa-exclamation-triangle text-orange-600 text-xl"></i>
+                    <i class="fas fa-shipping-fast text-orange-600 text-xl"></i>
                 </div>
             </div>
         </div>
@@ -55,11 +55,11 @@
         <div class="bg-white p-4">
             <div class="flex items-center justify-between">
                 <div>
-                    <p class="text-sm font-medium text-gray-600">On The Way</p>
-                    <p class="text-2xl font-bold text-red-600">3</p>
+                    <p class="text-sm font-medium text-gray-600">Pending</p>
+                    <p class="text-2xl font-bold text-red-600">14</p>
                     <p class="text-xs text-red-600 mt-1">
                         <i class="fas fa-clock mr-1"></i>
-                        Within 30 days
+                        Awaiting supplier
                     </p>
                 </div>
                 <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
