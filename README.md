@@ -1,8 +1,8 @@
-# 📦 Inventrify
+# ![Inventrify Logo](public/images/Inventrify-48x48.png) Inventrify
 
 A modern and intuitive **Inventory Management System** built with PHP and Tailwind CSS. Inventrify helps businesses efficiently track products, manage orders, monitor stock levels, and streamline their inventory operations.
 
-![Inventrify Logo](public/images/Inventrify-48x48.png)
+
 
 ## ✨ Features
 
