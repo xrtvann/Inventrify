@@ -1,12 +1,3 @@
 /node_modules
 
-# VS Code MCP configuration with API keys
-.vscode/mcp.json
-
-# Environment files
-.env
-.env.local
-.env.production
-
-# Logs
-*.log
+/.vscode/
