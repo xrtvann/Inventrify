@@ -12,56 +12,6 @@ $lastMonth = date('F Y', strtotime('-1 month'));
             <h2>Overview</h2>
         </div>
 
-        <!-- Financial Metrics Grid -->
-        <div class="grid grid-cols-3 gap-4 mb-6">
-            <div class="bg-white border-r border-slate-100 p-4">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-sm font-medium text-gray-600">Sales</p>
-                        <p class="text-lg font-bold text-gray-900">Rp 17,432</p>
-                        <p class="text-xs text-purple-600 mt-1">
-                            <i class="fas fa-chart-line mr-1"></i>
-                            Daily revenue
-                        </p>
-                    </div>
-                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                        <i class="fas fa-chart-line text-purple-600 text-lg"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white border-r border-slate-100 p-4">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-sm font-medium text-gray-600">Revenue</p>
-                        <p class="text-2xl font-bold text-gray-900">Rp 18,300</p>
-                        <p class="text-xs text-yellow-600 mt-1">
-                            <i class="fas fa-arrow-up mr-1"></i>
-                            +5.2% this week
-                        </p>
-                    </div>
-                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
-                        <i class="fas fa-dollar-sign text-yellow-600 text-xl"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white p-4">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-sm font-medium text-gray-600">Total Profit</p>
-                        <p class="text-2xl font-bold text-gray-900">Rp 21,190</p>
-                        <p class="text-xs text-green-600 mt-1">
-                            <i class="fas fa-arrow-up mr-1"></i>
-                            +8.1% this month
-                        </p>
-                    </div>
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                        <i class="fas fa-chart-pie text-green-600 text-xl"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Best Selling Category -->

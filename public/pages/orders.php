@@ -79,14 +79,14 @@
                 <i class="fa fa-search text-sm absolute top-3 left-3 text-slate-500"></i>
                 <input type="text"
                     class="search-input focus:outline-none border border-slate-300 focus:border-slate-500 bg-slate-0 px-6 py-1.5 ps-10 rounded-sm"
-                    placeholder="Search products..." />
+                    placeholder="Search Orders..." />
             </form>
         </div>
         <div class="right-action-buttons flex items-center gap-3">
-            <div class="add-product">
+            <div class="add-order">
                 <button
                     class="bg-green-600 text-white px-4 py-1.5 rounded-sm hover:bg-green-700 cursor-pointer transition duration-200">
-                    Add Product
+                    Add Order
                 </button>
             </div>
             <div class="filter">
