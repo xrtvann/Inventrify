@@ -27,6 +27,11 @@ function toggleSidebar() {
     sidebarBrand.style.display = "block";
     sidebarTexts.forEach((text) => (text.style.display = "block"));
   }
+
+  // Force layout recalculation for responsive components (e.g., charts) after transition
+  setTimeout(() => {
+    window.dispatchEvent(new Event("resize"));
+  }, 310); // slightly longer than CSS transition (300ms)
 }
 
 sidebarToggle.addEventListener("click", toggleSidebar);

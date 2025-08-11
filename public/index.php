@@ -104,7 +104,7 @@ $title = isset($pageTitles[$page]) ? $pageTitles[$page] : 'Todolist App';
         <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-20 lg:hidden hidden"></div>
 
         <!-- Main Content Area -->
-        <div id="mainContent" class="flex-1 flex flex-col h-screen transition-all duration-300 lg:ml-0">
+        <div id="mainContent" class="flex-1 flex flex-col h-screen transition-all duration-300 lg:ml-0 min-w-0">
             <!-- Header Navbar - Sticky -->
             <header class="bg-white shadow-sm flex-shrink-0 z-10">
                 <div class="flex items-center justify-end px-4 py-3 lg:px-6 lg:py-4">
