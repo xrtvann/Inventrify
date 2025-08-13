@@ -177,6 +177,10 @@ $title = isset($pageTitles[$page]) ? $pageTitles[$page] : 'Todolist App';
         </div>
     </div>
 
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Page-specific charts -->
+    <script src="js/chart.js"></script>
     <script src="js/app.js"></script>
 </body>
 

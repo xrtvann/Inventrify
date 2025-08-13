@@ -8,7 +8,7 @@ $lastMonth = date('F Y', strtotime('-1 month'));
     <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-4">
         <!-- Overview Section -->
         <div class="container bg-white px-5 py-5 rounded-sm shadow-md min-w-0">
-            <div class="info ps-3 text-lg font-medium mb-3">
+            <div class="info text-lg font-medium mb-3">
                 <h2>Overview (<?php echo $currentMonth; ?>)</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -55,7 +55,7 @@ $lastMonth = date('F Y', strtotime('-1 month'));
         <!-- Best Selling Category -->
         <div class="container bg-white px-5 py-5 rounded-sm shadow-md min-w-0">
             <div class="flex justify-between items-center mb-4">
-                <div class="info ps-3 text-lg font-medium">
+                <div class="info text-lg font-medium">
                     <h2>Best selling category</h2>
                 </div>
                 <a href="#" class="text-sm text-blue-600 hover:text-blue-700">See All</a>

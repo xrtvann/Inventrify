@@ -1,7 +1,7 @@
 <div class="container  bg-white px-5 py-5 rounded-sm shadow-md mb-8">
     <!-- Product Overview Cards -->
     <div class="info ps-3 text-lg font-medium mb-3">
-        <h2>Overall Orders</h2>
+        <h2>Orders Overview</h2>
     </div>
     <div class="grid grid-cols-4 gap-4">
         <div class="bg-white border-r border-slate-100 p-4 ">
